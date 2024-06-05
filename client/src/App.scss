@@ -1,0 +1,109 @@
+@import "./css-config/mixins.scss";
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #1f1e1e;
+  overflow: hidden;
+
+  @include md {
+    width: 50%;
+  }
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 500;
+
+  @include md {
+    font-size: 130px;
+    font-weight: 200;
+  }
+}
+
+input {
+  font-size: 18px;
+  color: #2c3e50;
+  width: 80%;
+  margin-left: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 5px solid #34495e;
+  padding: 5px;
+
+  @include md {
+    font-size: 20px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.task {
+  background-color: #34495e;
+  padding: 15px;
+  margin: 5px;
+  overflow-x: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task span {
+  color: #FFFFFF;
+}
+
+.icon {
+  float: right;
+  margin-right: 20px;
+}
+
+article {
+  display: grid;
+}
+
+.edit-todo {
+  width: 85%;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.button {
+  margin: 10px;
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+
+  @include md{
+    padding: 10px;
+  }
+}
+
+.button.selected {
+  color: #FFF;
+  background-color: #6c6777;
+}
+
+.button.clear {
+  float: none;
+  color: #FFF;
+  background-color: #ef6b7a;
+  width: 170px;
+
+  @include md{
+    float: right;
+  }
+}
