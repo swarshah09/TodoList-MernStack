@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+// Set the strictQuery option to suppress the deprecation warning
+mongoose.set('strictQuery', false);
 
 const Connection = () => {
 
