@@ -6,8 +6,6 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "echo 'No build process configured'",
-    "prestart": "npm run build"
   },
   "author": "",
   "license": "ISC",
